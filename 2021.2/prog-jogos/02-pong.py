@@ -17,7 +17,7 @@ ballVelocityY = 0.3
 while True:
     if (ball.x >= (background.width - ball.width) or ball.x <= 0):
         ballVelocityX = ballVelocityX * -1
-    if (ball.y >= background.height or ball.y <= ball.height):
+    if (ball.y >= (background.height - ball.height) or ball.y <= 0):
         ballVelocityY = ballVelocityY * -1
 
     ball.x = ball.x + ballVelocityX
